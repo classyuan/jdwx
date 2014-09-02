@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <title>个人中心</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="x-dns-prefetch-control" content="on"/>
+
+    <link rel="stylesheet" href="css/gb_v3.css"/>
+    <link rel="stylesheet" href="css/my_v2.css"/>
+    <style type="text/css">
+    .my_head{ background: url(images/my_user_bg.png) center bottom;background-size: cover; }
+    .my_user{ background: none; border: none;padding: 15px 30px 5px 70px}
+    .my_user .image{ top: 13px;}
+    .my_user .name .tag,.my_user .name .text{ color: #fff;}
+    .my_user .des{ color: #460c0c;}
+    .my_user .des span{ background: #ffac0d; color: #fff; padding: 2px 5px;}
+    .my_user_tools{ height:52px; display: -webkit-flex;}
+    .my_user_tools a{ flex:1; text-align: center; color: #fff; font-size: 12px;line-height: 20px; margin: 5px 0; border-right: 1px solid #e5a2a3; }
+    .my_user_tools a:last-child{ border-right: none;}
+    .my_user_tools a em{ display: block; font-size: 14px;}
+    .my_menu .menu_all{border-top:1px solid #ddd; margin-top:10px;}
+    .my_menu .menu_all .menu_1{ background: none; text-align: left;}
+
+    .my_menu ul{border-top:none;}
+    </style>
+</head>
+<body>
+
+<div class="wx_wrap">
+    <div class="my_head">
+        <!-- S 账户信息 -->
+        <div class="my_user" id="jdtip">
+            <div class="image">
+                <img id="jdimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXt7e0zK21NAAAAAXRSTlMAQObYZgAAAApJREFUeNpjYAAAAAIAAeUn3vwAAAAASUVORK5CYII=" width="50" height="50">
+            </div>
+            <p class="name"><span class="tag">京东帐号</span><span id="jdnickname" class="text">classyuan</span></p>
+            <p class="des"><span id="jddesc">银牌用户</span>-享受会员权利及优惠</p>
+        </div>
+        <div class="my_user_tools">
+            <a href="" class="user_tools_item"><em>42</em>我的收藏</a>
+            <a href="" class="user_tools_item"><em>28</em>我的推荐</a>
+            <a href="" class="user_tools_item"><em>69</em>我的足迹</a>
+        </div>
+        <!-- E 账户信息 -->
+    </div>
+    <!-- S 信息导航 -->
+    <div class="my_nav my_tab" style="display:none">
+        <ul>
+            <li><a href="#"><span>0.00</span>余额</a></li>
+            <li><a href="#"><span>50</span>京豆</a></li>
+            <li><a href="#"><span>1</span>京东卡</a></li>
+            <li><a href="#"><span>356</span>积分</a></li>
+        </ul>
+    </div>
+    <!-- E 信息导航 -->
+
+
+
+    <!-- S 入口菜单 -->
+    <ul class="my_list">
+        <li class="hr" style="border-top: 0;"></li>
+        <li class="tiao" id="jdhbarea" data-url="http://mm.wanggou.com/coupon/" style="border-bottom: 0px;"><a href="javascript:;">我的订单<em id="couponNum"></em><span>查看全部订单</span></a></li>
+    </ul>
+    <div class="my_menu">
+        <ul>
+
+            <li class="tiao" data-url="http://m.buy.qq.com/p/cart/order/orderlist_merge.shtml?tab=2#wechat_redirect">
+                <a href="javascript:;" class="menu_2"><span id="payDeaLNum" style="display: none;"></span>待付款</a>
+            </li>
+            <li class="tiao" data-url="http://m.buy.qq.com/p/cart/order/orderlist_merge.shtml?tab=3#wechat_redirect">
+                <a href="javascript:;" class="menu_3"><span id="receiveDeaLNum" style="display: none;"></span>配送中</a>
+            </li>
+            <li class="tiao" data-url="http://mm.wanggou.com/service/myOrder.shtml">
+                <a href="javascript:;" class="menu_4">退换货</a>
+            </li>
+        </ul>
+    </div>
+    <!-- E 入口菜单 -->
+
+    <!-- S 入口列表 -->
+    <ul class="my_list">
+        <li class="tiao" id="jdhbarea" data-url="http://mm.wanggou.com/coupon/"><a href="javascript:;">我的京东券<em id="couponNum"></em><span></span></a></li>
+        <li class="hr"></li>
+        <li class="tiao" data-url="http://mm.wanggou.com/my/jdshopcart.shtml" id="goodCart"><a href="javascript:;">我的购物车<em id="cartNum"></em><span></span></a></li>
+        <li class="tiao" data-url="http://mm.wanggou.com/my/goods_fav.shtml?PTAG=37068.1.5" id="goodFav"><a href="javascript:;">我的收藏</a></li>
+        <li style="display:none"><a href="javascript:;">我关注的品牌</a></li>
+        <li class="tiao" data-url="http://mm.wanggou.com/my/recently.shtml"><a href="javascript:;">我的浏览记录</a></li>
+        <li class="tiao" data-url="http://mm.wanggou.com/my/mypreorder.shtml"><a href="javascript:;">我的预约商品</a></li>
+        <li class="hr"></li>
+        <li class="tiao" data-url="http://m.buy.qq.com/p/cart/order/my_address.shtml"><a href="javascript:;">收货地址管理</a></li>
+        <!--  <li class="tiao" data-url="http://mm.wanggou.com/service/myOrder.shtml"><a href="javascript:;">返修/退换货</a></li> -->
+        <li class="tiao" id="helpCenter" data-url="http://weigou.qq.com/wkd/messages/show/cid-cc_idc_212794?_fna=y&amp;jobName=ImmediateMessageTemplate_N_idc1242266_247142"><a href="javascript:;">帮助中心</a></li>
+    </ul>
+    <!-- E 入口列表 -->
+    <div class="my_links">
+        <a href="tel:4006560011" class="link_tel">致电客服</a>
+    </div>
+</div>
+
+
+<div class="wx_footer"><div class="jd_logo" id="jdBtmLogo"></div></div>
+
+
+</body>
+</html>

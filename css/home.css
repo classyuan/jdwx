@@ -1,0 +1,25 @@
+.jd-new-wrap{ padding: 20px 10px;}
+
+
+.WX_tab_wrap{font-size: 16px; height: 43px; line-height: 46px; padding-bottom: 3px; text-align: center; position: relative;}
+.jd-new-title{ margin: 0 10px; background: #fff; height: 40px; position: relative;line-height: 40px;}
+.jd-new-title  h2{ color: #e3393a; position:absolute; width: 304px; text-align: center; margin-left: 30px;}
+.jd-new-title  h2 span{ min-width: 180px; background: #fff; padding: 0px 5px; font-size: 16px;}
+.new-line{ background: #e13b3d; height: 1px;  margin: 19px 0 0 30px;float:left;width: 304px;}
+.jd-new-img{}
+.photo{width: 100%;}
+
+.jd-new-desc{ height: 45px;font-size: 16px; line-height: 40px;}
+.jd-new-tt{ float: left; color: #333;width: 200px; overflow: hidden;}
+.jd-new-price{ float: right; width: 160px; text-align: right;}
+.jd-new-price b { color: #e4393c;}
+.jd-new-buy{ text-align: center;}
+.jd-new-buy .new-btn{ background: #e43a3d; color: #fff; display: block; height: 40px; border-radius: 3px; text-align: center; line-height: 40px; width: 100%;}
+
+
+.jd-new-wrap .tm{ background: url(../images/youhui.png); height: 765px; background-size: cover;}
+.jd-new-wrap .jd-miaosha{ background: url(../images/miaosha.png); height: 634px; background-size: cover;}
+
+.jd-banner-wrap{ background: url(../images/banner.png); height:164px; background-size: cover; position: relative;}
+
+.WX_search{position: relative; top: 108px; height: 35px; width:300px; border: none; background: #fafbfc; left: 33px;}
